@@ -1,34 +1,33 @@
+const { is } = require("express/lib/request");
 
-console.log(typeof 1);
-console.log(typeof 200n);
-console.log(typeof "xd");
-console.log(typeof true);
-console.log(typeof undefined);
-console.log("null");
-console.log(typeof []);
+let funnyNumber = 12345; // Convert to String
+let funnyString = '12345'; // Convert to Number
+let funnyTrue = '1'; // Convert to Boolean
+let funnyFalse = '0'; // Convert to Boolean
+let isTrue = false; // Convert to String
+let isFalse = true; // Convert to Number
+let funnyText = 'JavaScript is dynamic programming language.'; // Convert to Number
+let funnyNull = null; // Convert to String
+let funnyUndefined = undefined; // Convert to String
+let isTruee = true; // Convert to String
+let isFalsee = false; // Convert to String
+let booleanString = 'true' // Convert to Number
+let otherBooleanString = 'false' // Convert to Boolean
+
+console.log(typeof funnyNumber.toString())
+console.log(typeof Number(funnyString))
+console.log(typeof Boolean(funnyTrue))
+console.log(typeof Boolean(funnyFalse))
+console.log(typeof isTrue.toString())
+console.log(typeof Number(isFalse))
+console.log(typeof Number(funnyText))
+console.log(typeof String(funnyUndefined))
+console.log(typeof isTruee.toString())
+console.log(typeof String(isFalsee))
+console.log(typeof Number(booleanString))
+console.log(typeof Boolean(otherBooleanString))
 
 
-let number = 12;
-let otherNumber = 45.89;
-let textOne = 'Beautiful JavaScript World';
-let textTwo = "Beautiful JavaScript World";
-let textThree = `Beautiful JavaScript World`;
-let isTrue = (true == false);
-let isEqual = (2 >= 0);
-let petName = undefined;
-let petAge = null;
-let human = {
-humanName: undefined,
-humanAge: null
-};
-console.log("-------------------")
-console.log(typeof number )
-console.log(typeof otherNumber)
-console.log(typeof textOne)
-console.log(typeof textTwo)
-console.log(typeof textThree)
-console.log(typeof isTrue)
-console.log(typeof isEqual)
-console.log(typeof petName)
-console.log(typeof petAge)
-console.log(typeof human)
+let car = {make: "Citroen", model:"DS"};
+for (let f in car) console.log(f)
+
