@@ -1,2 +1,3 @@
 const selectedDiv = document.getElementById("color");
-console.log(selectedDiv);
+console.log(selectedDiv.children);
+
